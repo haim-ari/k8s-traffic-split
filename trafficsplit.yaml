@@ -1,0 +1,14 @@
+apiVersion: split.smi-spec.io/v1alpha2
+kind: TrafficSplit
+metadata:
+  name: demo-split
+  namespace: default
+spec:
+  service: prd-demo
+  backends:
+  - service: prd-demo
+    weight: 75
+  - service: poc-demo
+    weight: 15
+  - service: stg-demo
+    weight: 10

@@ -1,0 +1,9 @@
+nameOverride: "prd-demo"
+fullnameOverride: "prd-demo"
+app: "prd-demo"
+image:
+  repository: "quay.io/public"
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: demo-linux-prd
+  version: ""

@@ -1,0 +1,9 @@
+nameOverride: "poc-demo"
+fullnameOverride: "poc-demo"
+app: "poc-demo"
+image:
+  repository: "quay.io/public"
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: demo-linux-poc
+  version: ""
